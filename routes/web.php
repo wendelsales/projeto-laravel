@@ -14,3 +14,4 @@ use Illuminate\Support\Facades\Route;
 //tipo da rota  --  controller  --  function do controller
 Route::get('/',[SiteController::class, 'index']);
 Route::get('/sair',[SiteController::class, 'sair']);
+Route::get('/usuarios/{qnt}',[SiteController::class, 'user']);

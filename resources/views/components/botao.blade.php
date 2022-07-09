@@ -1,0 +1,1 @@
+<button style="background-color:red; padding: 5px; color:aliceblue; border:0;">delete</button>

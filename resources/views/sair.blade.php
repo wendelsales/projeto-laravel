@@ -7,16 +7,23 @@
     <title>foreach</title>
 </head>
 <body>
-    @foreach($ingredientes as $ing)
-        <p> {{$ing}} 
-
-            @component('components.botao')
-
-            @endcomponent
-        </p>
-    @endforeach
-
-
+   <div style="
+   display:flex;
+   flex-direction: row;
+   flex-wrap:wrap;
+   justify-content:space-between;
+    ">
+    <!-- de $i e igual a 0, enquanto $i for menor q 50 , ele soma +1 ate chegar em 50 ae para -->
+    @for($i=0; $i<50;$i++)
+        <div style="
+        width:150px;
+        height:150px;
+        "><!-- a variavel $i é a do for-->
+            <!-- se eu usasse so $url repetiria a mesma imgem -->
+            <img src="{{$url}}{{$i}}">
+        </div>
+    @endfor
+   </div>
 
 
 </body>
